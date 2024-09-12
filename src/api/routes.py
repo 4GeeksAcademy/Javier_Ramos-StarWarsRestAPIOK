@@ -20,3 +20,7 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+@api.route('/all_users', methods=['GET'])
+def get_all_users():
+    return jsonify({'msg':'OK'})
